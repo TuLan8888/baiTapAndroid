@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1077210275589",
+    "firebase_url": "https://anc-exam-default-rtdb.firebaseio.com",
+    "project_id": "anc-exam",
+    "storage_bucket": "anc-exam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077210275589:android:fa29288957853e38c9a16c",
+        "android_client_info": {
+          "package_name": "deso1.nguyenducluong.dlu_21a100100221"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn9bWTlzpv6RUwzDwKaK6aJ45MKb1oKZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077210275589:android:84c25270911eb25dc9a16c",
+        "android_client_info": {
+          "package_name": "deso1.nguyenthitulan.dlu_nguyenthitulan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn9bWTlzpv6RUwzDwKaK6aJ45MKb1oKZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

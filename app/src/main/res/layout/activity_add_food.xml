@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Ảnh món ăn -->
+    <ImageView
+        android:id="@+id/ivFoodImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_food_placeholder"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+    app:layout_constraintWidth_percent="1" />
+
+    <!-- LinearLayout chứa 2 icon (thư viện và máy ảnh) -->
+    <LinearLayout
+        android:id="@+id/llIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFoodImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Icon thư viện -->
+        <ImageView
+            android:id="@+id/ivGallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_gallery"
+            android:contentDescription="Chọn ảnh từ thư viện"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Icon máy ảnh -->
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_camera"
+            android:contentDescription="Chụp ảnh"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Trường nhập tên món -->
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên món"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/llIcons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Trường nhập giá -->
+    <EditText
+        android:id="@+id/etFoodPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Giá"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etFoodName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Nút Add nằm ở bên phải màn hình -->
+    <Button
+        android:id="@+id/btnSaveFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/etFoodPrice"
+        app:layout_constraintTop_toBottomOf="@id/etFoodPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
